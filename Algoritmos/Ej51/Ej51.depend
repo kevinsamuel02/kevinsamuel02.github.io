@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1738073734 source:c:\users\lucas\onedrive\desktop\algoritmos\ejercicios programacion ats\ej51\main.cpp
+	<iostream>
+	<conio.h>
+	<stdlib.h>
+

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Kevin Samuel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicon/devicon@latest/devicon.min.css" />
+</head>
+<body>
+
+    <header class="hero">
+        <div style="margin-top: 30px;">
+            <a href="CV_KevinSamuel.pdf" download class="btn-cv">
+                <i class="fas fa-download"></i> Descargar CV
+            </a>
+        </div>
+        <div class="container">
+            <h1>Hola, soy <span class="highlight">Kevin Samuel</span></h1>
+            <h2>Estudiante de Ingeniería en Sistemas</h2>
+            <a href="#contact" class="btn">Contactarme</a>
+        </div>
+        <div class="scroll-container">
+            <span class="scroll-text">Ver más</span>
+            <div class="chevron"></div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h3 class="section-title">Sobre mí</h3>
+            <p>
+                Actualmente estoy cursando la carrera de Ingeniería en Sistemas. Mi enfoque principal está en comprender
+                los fundamentos de la computación a través de distintos paradigmas de programación. 
+                Busco oportunidades para aplicar mis conocimientos en proyectos reales y seguir aprendiendo.
+            </p>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h3 class="section-title">Mi Trayectoria</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 - Presente</span>
+                        <h4>Proyectos Académicos Avanzados</h4>
+                        <p>Desarrollo intensivo en C++, Haskell y Prolog. Resolución de problemas algorítmicos complejos y modelado de sistemas.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h4>Inicio Ingeniería en Sistemas</h4>
+                        <p>Comienzo de la carrera en UTN FRBA. Formación sólida en lógica, matemática y fundamentos de programación.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 - 2023</span>
+                        <h4>Madrij (Liderazgo Juvenil)</h4>
+                        <p>Liderazgo de grupos, planificación educativa y gestión de equipos. Desarrollo de habilidades blandas: comunicación, empatía y resolución de conflictos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-darker">
+        <div class="container">
+            <h3 class="section-title">Mis Habilidades</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>C / C++</h4>
+                    <p>Manejo de memoria, punteros y estructuras de datos de alto rendimiento.</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Haskell</h4>
+                    <p>Programación Funcional pura, recursividad y manejo de tipos.</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Prolog</h4>
+                    <p>Programación Lógica y resolución de problemas basados en hechos y reglas.</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Wollok</h4>
+                    <p>Programación Orientada a Objetos didáctica y modelado de dominios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h3 class="section-title">Proyectos Académicos</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h4>Repositorio de Algoritmos</h4>
+                    <p>Colección de estructuras de datos y algoritmos de ordenamiento implementados en C++.</p>
+                    <span class="tag">C++</span>
+                    <br><br>
+                    <a href="https://github.com/kevinsamuel02/kevinsamuel02.github.io/tree/1ed0e69a985af62f08cc9e6a57c32f966efd6ae9/Algoritmos" class="link">Ver Código &rarr;</a>
+                </div>
+
+                <div class="project-card">
+                    <h4>Resolución Lógica</h4>
+                    <p>Ejercicios complejos de lógica resueltos utilizando el paradigma lógico.</p>
+                    <span class="tag">Prolog</span>
+                    <br><br>
+                    <a href="https://github.com/kevinsamuel02/kevinsamuel02.github.io/tree/1ed0e69a985af62f08cc9e6a57c32f966efd6ae9/Logico" class="link">Ver Código &rarr;</a>
+                </div>
+
+                <div class="project-card">
+                    <h4>Modelado de Objetos</h4>
+                    <p>Diseño de sistemas basados en la interacción de entidades y envío de mensajes. Foco en polimorfismo, herencia y manejo de excepciones.</p>
+                    <span class="tag">Wollok</span>
+                    <br><br>
+                    <a href="https://github.com/kevinsamuel02/kevinsamuel02.github.io/tree/1ed0e69a985af62f08cc9e6a57c32f966efd6ae9/Objetos" class="link">Ver Código &rarr;</a>
+                </div>
+
+                <div class="project-card">
+                    <h4>Paradigma Funcional</h4>
+                    <p>Soluciones declarativas priorizando la inmutabilidad de datos. Uso extensivo de funciones de orden superior, composición y recursividad.</p>
+                    <span class="tag">Haskell</span>
+                    <br><br>
+                    <a href="https://github.com/kevinsamuel02/kevinsamuel02.github.io/tree/1ed0e69a985af62f08cc9e6a57c32f966efd6ae9/Funcional" class="link">Ver Código &rarr;</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="tech-stack" class="section">
+        <div class="container">
+            <h3 class="section-title">Mi Stack Tecnológico</h3>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="devicon-cplusplus-plain colored"></i>
+                    <p>C++</p>
+                </div>
+                <div class="tech-item">
+                    <i class="devicon-haskell-plain colored"></i>
+                    <p>Haskell</p>
+                </div>
+                <div class="tech-item">
+                    <i class="devicon-git-plain colored"></i>
+                    <p>Git</p>
+                </div>
+                <div class="tech-item">
+                    <i class="devicon-html5-plain colored"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="tech-item">
+                    <i class="devicon-css3-plain colored"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="tech-item">
+                    <i class="devicon-java-plain colored"></i>
+                    <p>Java/Wollok</p>
+                </div>
+            </div>
+        </div>
+</section>
+
+    <section id="academic" class="section">
+        <div class="container">
+            <h3 class="section-title" style="color: #0f172a; border-color: #38bdf8;">Estadísticas Académicas</h3>
+            <p style="margin-bottom: 2rem; text-align: center; color: #555;">Progreso en tiempo real de mi carrera universitaria.</p>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number" id="promedio-val">0.0</span>
+                    <span class="stat-label">Promedio General</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="materias-val">0</span>
+                    <span class="stat-label">Materias Aprobadas</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="progreso-val">0%</span>
+                    <span class="stat-label">Progreso Carrera</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico Integrado -->
+            <div class="chart-container">
+                <canvas id="miCarreraChart"></canvas>
+            </div>
+
+            <h4 style="color: #0f172a; margin-bottom: 1rem;">Historial de Materias</h4>
+            <div id="subjects-list" class="subjects-list">
+                <!-- Se llena automáticamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h3>Contacto</h3>
+            <p>¿Te interesa mi perfil? ¡Escribime!</p>
+            <div class="social-links">
+                <a href="mailto:kevinsamuel21105@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/kevin-samuel-5013802a8/">LinkedIn</a>
+                <a href="https://github.com/projects?query=is%3Aopen+creator%3A%40me">GitHub</a>
+            </div>
+            <p class="copyright">&copy; 2026 Kevin Samuel. Creado con HTML & CSS.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- CONFIGURACIÓN: TU BASE DE DATOS ---
+        const datosAcademicos = {
+            totalMateriasPlan: 41, // Total de materias de tu carrera
+            materias: [
+                // Estados posibles: "Promocionada", "Final", "Cursada" (si debes final)
+                { nombre: "Álgebra y Geometría Analítica", nota: 8, estado: "Promocionada" },
+                { nombre: "Análisis de Sistemas de Información", nota: 10, estado: "Final" },
+                { nombre: "Sistemas y Procesos de Negocios", nota: 9, estado: "Promocionada" },
+                { nombre: "Análisis Matemático I", nota: 10, estado: "Promocionada" },
+                { nombre: "Análisis Matemático II", nota: 8, estado: "Promocionada" },
+                { nombre: "Arquitectura de Computadores", nota: 8, estado: "Promocionada" },
+                { nombre: "Física I", nota: 10, estado: "Promocionada" },
+                { nombre: "Física II", nota: 8, estado: "Promocionada" },
+                { nombre: "Ingeniería y Sociedad", nota: 9, estado: "Promocionada" },
+                { nombre: "Lógica y Estructuras Discretas", nota: 6, estado: "Final" },
+                { nombre: "Probabilidad y Estadística", nota: 9, estado: "Promocionada" },
+                { nombre: "Algoritmos y Estructuras de Datos", nota: 10, estado: "Final" },
+                { nombre: "Sintaxis y Semántica de los Lenguajes", nota: 9, estado: "Promocionada" },
+                // Ejemplo de materia cursada pero sin final:
+                // { nombre: "Análisis Matemático II", nota: null, estado: "Cursada" },
+            ]
+        };
+
+        // --- LÓGICA AUTOMÁTICA (CÁLCULOS Y GRÁFICOS) ---
+        function cargarEstadisticas() {
+            const materias = datosAcademicos.materias;
+            
+            // 1. Filtrar y Calcular Conteos
+            const promocionadas = materias.filter(m => m.estado === 'Promocionada').length;
+            const finales = materias.filter(m => m.estado === 'Final').length;
+            const cursadas = materias.filter(m => m.estado === 'Cursada').length;
+            const aprobadasTotal = promocionadas + finales; // Solo las que tienen nota final
+            const pendientes = datosAcademicos.totalMateriasPlan - (aprobadasTotal + cursadas);
+
+            // 2. Calcular Promedio (Solo de materias aprobadas con nota)
+            const materiasConNota = materias.filter(m => m.nota !== null && m.nota > 0);
+            const sumaNotas = materiasConNota.reduce((sum, m) => sum + m.nota, 0);
+            const promedio = materiasConNota.length > 0 ? (sumaNotas / materiasConNota.length).toFixed(2) : 0;
+            
+            // 3. Calcular Porcentaje de Carrera
+            const porcentaje = Math.min(100, (aprobadasTotal / datosAcademicos.totalMateriasPlan) * 100).toFixed(1);
+
+            // 4. Actualizar HTML (Tarjetas)
+            document.getElementById('promedio-val').innerText = promedio;
+            document.getElementById('materias-val').innerText = `${aprobadasTotal} / ${datosAcademicos.totalMateriasPlan}`;
+            document.getElementById('progreso-val').innerText = `${porcentaje}%`;
+            
+            // 5. Animación de barra
+            setTimeout(() => {
+                document.getElementById('progress-fill').style.width = `${porcentaje}%`;
+            }, 500);
+
+            // 6. Generar Gráfico (Chart.js)
+            const ctx = document.getElementById('miCarreraChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Promocionadas', 'Final Aprobado', 'Debo Final', 'Pendientes'],
+                    datasets: [{
+                        data: [promocionadas, finales, cursadas, pendientes],
+                        backgroundColor: ['#00d2d3', '#2e86de', '#feca57', '#576574'],
+                        borderWidth: 0
+                    }]
+                },
+                options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
+            });
+
+            // 7. Generar lista visual
+            const listaContainer = document.getElementById('subjects-list');
+            listaContainer.innerHTML = ''; 
+
+            materias.forEach(m => {
+                // Solo mostramos en la lista las que tienen nota (opcional)
+                if(!m.nota) return; 
+
+                const div = document.createElement('div');
+                div.className = 'subject-item';
+                const esNotaAlta = m.nota >= 9;
+                div.innerHTML = `<span class="subject-name">${m.nombre}</span><span class="subject-grade ${esNotaAlta ? 'high' : ''}">${m.nota}</span>`;
+                listaContainer.appendChild(div);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', cargarEstadisticas);
+    </script>
+</body>
+</html>
