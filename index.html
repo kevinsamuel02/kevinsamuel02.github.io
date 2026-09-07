@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Kevin Samuel</title>
+    <title>Kevin Samuel | Portfolio</title>
+    <meta name="description" content="Portfolio de Kevin Samuel, estudiante de Ingeniería en Sistemas de Información (UTN) y Soporte Técnico. Proyectos en C, Haskell, Prolog, Wollok y desarrollo web.">
+    <meta name="theme-color" content="#0f172a">
+
+    <meta property="og:title" content="Kevin Samuel | Portfolio">
+    <meta property="og:description" content="Estudiante de Ingeniería en Sistemas de Información (UTN). Proyectos académicos y experiencia profesional en tecnología.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -11,17 +20,43 @@
 </head>
 <body>
 
-    
-    <header class="hero">
-        <div style="margin-top: 30px;">
-            <a href="file:///C:/Users/lucas/OneDrive/Desktop/Kevo/Kevin%20Samuel%20CV.pdf" download class="btn-cv">
-                <i class="fas fa-download"></i> Descargar CV
-            </a>
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-brand highlight">KS</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#experience">Trayectoria</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#academic">Académico</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema claro/oscuro">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
-        <div class="container">
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <span class="eyebrow">Ingeniería en Sistemas · UTN</span>
             <h1>Hola, soy <span class="highlight">Kevin Samuel</span></h1>
-            <h2>Estudiante de Ingeniería en Sistemas</h2>
-            <a href="#contact" class="btn">Contactarme</a>
+            <h2>Estudiante de Ingeniería en Sistemas de Información &amp; Soporte Técnico</h2>
+            <div class="hero-actions">
+                <a href="assets/cv/CV_Kevin_Samuel.pdf" download class="btn-cv">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
+                    Descargar CV
+                </a>
+                <a href="assets/cv/CV_Kevin_Samuel_English.pdf" download class="cv-lang-link">CV in English (PDF)</a>
+                <a href="#contact" class="btn">Contactarme</a>
+            </div>
         </div>
         <div class="scroll-container">
             <span class="scroll-text">Ver más</span>
@@ -31,19 +66,29 @@
 
     <section id="about" class="section">
         <div class="container">
-            <h3 class="section-title">Sobre mí</h3>
-            <p>
-                Actualmente estoy cursando la carrera de Ingeniería en Sistemas. Mi enfoque principal está en comprender
-                los fundamentos de la computación a través de distintos paradigmas de programación. 
-                Busco oportunidades para aplicar mis conocimientos en proyectos reales y seguir aprendiendo.
+            <h3 class="section-title reveal">Sobre mí</h3>
+            <p class="about-text reveal">
+                Estoy cursando Ingeniería en Sistemas de Información en la UTN FRBA, con foco en entender los
+                fundamentos de la computación a través de distintos paradigmas de programación (imperativo, funcional,
+                lógico y orientado a objetos). Actualmente combino mis estudios con experiencia profesional: trabajo
+                como Soporte Técnico en una startup de EE. UU. usando JavaScript y Vue, y coordino proyectos de
+                Engagement en Hillel. Busco seguir sumando experiencia real en proyectos de tecnología.
             </p>
         </div>
     </section>
 
-    <section id="experience" class="section">
+    <section id="experience" class="section bg-darker">
         <div class="container">
-            <h3 class="section-title">Mi Trayectoria</h3>
-            <div class="timeline">
+            <h3 class="section-title reveal">Mi Trayectoria</h3>
+            <div class="timeline reveal">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 — Marzo 2026</span>
+                        <h4>Madrij · Club Cissab</h4>
+                        <p>Educador no formal. Liderazgo de grupos, planificación educativa y gestión de equipos. Desarrollo de comunicación asertiva, empatía y resolución de conflictos.</p>
+                    </div>
+                </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
@@ -55,27 +100,35 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">2025</span>
+                        <span class="timeline-date">2025 — 2026</span>
                         <h4>Proyectos Académicos Avanzados</h4>
-                        <p>Desarrollo intensivo en C++, Haskell y Prolog. Resolución de problemas algorítmicos complejos y modelado de sistemas.</p>
+                        <p>Desarrollo intensivo en C++, Haskell y Prolog, y en C sobre Linux para Sistemas Operativos (procesos, memoria, sockets). Resolución de problemas algorítmicos complejos y modelado de sistemas.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">2023 - 2026</span>
-                        <h4>Madrij (Liderazgo Juvenil)</h4>
-                        <p>Liderazgo de grupos, planificación educativa y gestión de equipos. Desarrollo de habilidades blandas: comunicación, empatía y resolución de conflictos.</p>
+                        <span class="timeline-date">Junio 2026 — Actualidad <span class="badge-current">En curso</span></span>
+                        <h4>Coordinador de Engagement · Hillel</h4>
+                        <p>Organización y creación de eventos, búsqueda y armado de equipos de facilitadores, y contacto directo con la comunidad.</p>
+                    </div>
+                </div>
+                <div class="timeline-item current">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Septiembre 2026 — Actualidad <span class="badge-current">En curso</span></span>
+                        <h4>Soporte Técnico · Startup (EE. UU.)</h4>
+                        <p>Resolución de tickets de soporte técnico en un entorno remoto, trabajando sobre un stack con JavaScript y Vue.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="section bg-darker">
+    <section id="skills" class="section">
         <div class="container">
-            <h3 class="section-title">Mis Habilidades</h3>
-            <div class="skills-grid">
+            <h3 class="section-title reveal">Mis Habilidades</h3>
+            <div class="skills-grid reveal-stagger">
                 <div class="skill-card">
                     <h4>C / C++</h4>
                     <p>Manejo de memoria, punteros y estructuras de datos de alto rendimiento.</p>
@@ -92,21 +145,36 @@
                     <h4>Wollok</h4>
                     <p>Programación Orientada a Objetos didáctica y modelado de dominios.</p>
                 </div>
+                <div class="skill-card">
+                    <h4>Sistemas Operativos (C / Linux)</h4>
+                    <p>Planificación de procesos, gestión de memoria, sistemas de archivos, threads y sockets.</p>
+                </div>
+                <div class="skill-card">
+                    <h4>JavaScript &amp; Vue.js</h4>
+                    <p>Uso profesional diario en soporte técnico: debugging y resolución de tickets sobre una app Vue.</p>
+                </div>
             </div>
         </div>
     </section>
 
-
-    <section id="projects" class="section">
+    <section id="projects" class="section bg-darker">
         <div class="container">
-            <h3 class="section-title">Proyectos Académicos</h3>
-            <div class="projects-grid">
+            <h3 class="section-title reveal">Proyectos Académicos</h3>
+            <div class="projects-grid reveal-stagger">
+                <div class="project-card">
+                    <h4>Sistemas Operativos</h4>
+                    <p>Módulos en C bajo Linux: planificación de procesos, gestión de memoria y sistema de archivos. Concurrencia con threads y comunicación por sockets.</p>
+                    <span class="tag">C · Linux</span>
+                    <br><br>
+                    <a href="https://github.com/kevinsamuel2/TP_Operativos" class="link">Ver Código &rarr;</a>
+                </div>
+
                 <div class="project-card">
                     <h4>Repositorio de Algoritmos</h4>
                     <p>Colección de estructuras de datos y algoritmos de ordenamiento implementados en C++.</p>
                     <span class="tag">C++</span>
                     <br><br>
-                    <a href="https://github.com/kevinsamuel02/kevinsamuel02.github.io/tree/1ed0e69a985af62f08cc9e6a57c32f966efd6ae9/Algoritmos" class="link">Ver Código &rarr;</a>
+                    <a href="https://github.com/kevinsamuel02/kevinsamuel02.github.io/tree/main/Algoritmos" class="link">Ver Código &rarr;</a>
                 </div>
 
                 <div class="project-card">
@@ -114,7 +182,7 @@
                     <p>Ejercicios complejos de lógica resueltos utilizando el paradigma lógico.</p>
                     <span class="tag">Prolog</span>
                     <br><br>
-                    <a href="https://github.com/kevinsamuel02/kevinsamuel02.github.io/tree/1ed0e69a985af62f08cc9e6a57c32f966efd6ae9/Logico" class="link">Ver Código &rarr;</a>
+                    <a href="https://github.com/kevinsamuel02/kevinsamuel02.github.io/tree/main/Logico" class="link">Ver Código &rarr;</a>
                 </div>
 
                 <div class="project-card">
@@ -122,7 +190,7 @@
                     <p>Diseño de sistemas basados en la interacción de entidades y envío de mensajes. Foco en polimorfismo, herencia y manejo de excepciones.</p>
                     <span class="tag">Wollok</span>
                     <br><br>
-                    <a href="https://github.com/kevinsamuel02/kevinsamuel02.github.io/tree/1ed0e69a985af62f08cc9e6a57c32f966efd6ae9/Objetos" class="link">Ver Código &rarr;</a>
+                    <a href="https://github.com/kevinsamuel02/kevinsamuel02.github.io/tree/main/Objetos" class="link">Ver Código &rarr;</a>
                 </div>
 
                 <div class="project-card">
@@ -130,24 +198,35 @@
                     <p>Soluciones declarativas priorizando la inmutabilidad de datos. Uso extensivo de funciones de orden superior, composición y recursividad.</p>
                     <span class="tag">Haskell</span>
                     <br><br>
-                    <a href="https://github.com/kevinsamuel02/kevinsamuel02.github.io/tree/1ed0e69a985af62f08cc9e6a57c32f966efd6ae9/Funcional" class="link">Ver Código &rarr;</a>
+                    <a href="https://github.com/kevinsamuel02/kevinsamuel02.github.io/tree/main/Funcional" class="link">Ver Código &rarr;</a>
                 </div>
-
             </div>
         </div>
     </section>
 
     <section id="tech-stack" class="section">
         <div class="container">
-            <h3 class="section-title">Mi Stack Tecnológico</h3>
-            <div class="tech-grid">
+            <h3 class="section-title reveal">Mi Stack Tecnológico</h3>
+            <div class="tech-grid reveal-stagger">
                 <div class="tech-item">
                     <i class="devicon-cplusplus-plain colored"></i>
                     <p>C++</p>
                 </div>
                 <div class="tech-item">
+                    <i class="devicon-linux-plain colored"></i>
+                    <p>Linux</p>
+                </div>
+                <div class="tech-item">
                     <i class="devicon-haskell-plain colored"></i>
                     <p>Haskell</p>
+                </div>
+                <div class="tech-item">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="tech-item">
+                    <i class="devicon-vuejs-plain colored"></i>
+                    <p>Vue.js</p>
                 </div>
                 <div class="tech-item">
                     <i class="devicon-git-plain colored"></i>
@@ -167,14 +246,14 @@
                 </div>
             </div>
         </div>
-</section>
+    </section>
 
-    <section id="academic" class="section">
+    <section id="academic" class="section bg-darker">
         <div class="container">
-            <h3 class="section-title" style="color: #0f172a; border-color: #38bdf8;">Estadísticas Académicas</h3>
-            <p style="margin-bottom: 2rem; text-align: center; color: #555;">Progreso en tiempo real de mi carrera universitaria.</p>
-            
-            <div class="stats-grid">
+            <h3 class="section-title reveal">Estadísticas Académicas</h3>
+            <p class="section-subtitle reveal">Progreso en tiempo real de mi carrera universitaria.</p>
+
+            <div class="stats-grid reveal-stagger">
                 <div class="stat-card">
                     <span class="stat-number" id="promedio-val">0.0</span>
                     <span class="stat-label">Promedio General</span>
@@ -192,13 +271,12 @@
                 </div>
             </div>
 
-            <!-- Gráfico Integrado -->
-            <div class="chart-container">
+            <div class="chart-container reveal">
                 <canvas id="miCarreraChart"></canvas>
             </div>
 
-            <h4 style="color: #0f172a; margin-bottom: 1rem;">Historial de Materias</h4>
-            <div id="subjects-list" class="subjects-list">
+            <h4 class="subjects-heading reveal">Historial de Materias</h4>
+            <div id="subjects-list" class="subjects-list reveal-stagger">
                 <!-- Se llena automáticamente con JavaScript -->
             </div>
         </div>
@@ -206,104 +284,30 @@
 
     <footer id="contact">
         <div class="container">
-            <h3>Contacto</h3>
-            <p>¿Te interesa mi perfil? ¡Escribime!</p>
-            <div class="social-links">
-                <a href="mailto:kevinsamuel21105@gmail.com">Email</a>
-                <a href="https://www.linkedin.com/in/kevin-samuel-5013802a8/">LinkedIn</a>
-                <a href="https://github.com/projects?query=is%3Aopen+creator%3A%40me">GitHub</a>
+            <h3 class="reveal">Contacto</h3>
+            <p class="reveal">¿Te interesa mi perfil? ¡Escribime!</p>
+            <div class="social-links reveal">
+                <a href="mailto:kevinsamuel21105@gmail.com">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+                    Email
+                </a>
+                <a href="https://www.linkedin.com/in/kevin-samuel-5013802a8/" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/kevinsamuel02" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+                    GitHub
+                </a>
             </div>
-            <p class="copyright">&copy; 2026 Kevin Samuel. Creado con HTML & CSS.</p>
+            <p class="copyright">&copy; <span id="year"></span> Kevin Samuel. Creado con HTML, CSS &amp; JS.</p>
         </div>
     </footer>
 
-    <script>
-        // --- CONFIGURACIÓN: TU BASE DE DATOS ---
-        const datosAcademicos = {
-            totalMateriasPlan: 41, // Total de materias de tu carrera
-            materias: [
-                // Estados posibles: "Promocionada", "Final", "Cursada" (si debes final)
-                { nombre: "Álgebra y Geometría Analítica", nota: 8, estado: "Promocionada" },
-                { nombre: "Análisis de Sistemas de Información", nota: 10, estado: "Final" },
-                { nombre: "Sistemas y Procesos de Negocios", nota: 9, estado: "Promocionada" },
-                { nombre: "Análisis Matemático I", nota: 10, estado: "Promocionada" },
-                { nombre: "Análisis Matemático II", nota: 8, estado: "Promocionada" },
-                { nombre: "Arquitectura de Computadores", nota: 8, estado: "Promocionada" },
-                { nombre: "Física I", nota: 10, estado: "Promocionada" },
-                { nombre: "Física II", nota: 8, estado: "Promocionada" },
-                { nombre: "Ingeniería y Sociedad", nota: 9, estado: "Promocionada" },
-                { nombre: "Lógica y Estructuras Discretas", nota: 6, estado: "Final" },
-                { nombre: "Probabilidad y Estadística", nota: 9, estado: "Promocionada" },
-                { nombre: "Algoritmos y Estructuras de Datos", nota: 10, estado: "Final" },
-                { nombre: "Sintaxis y Semántica de los Lenguajes", nota: 9, estado: "Promocionada" },
-                { nombre: "Ingles Técnico I", nota: 8, estado: "Final" },
-                { nombre: "Paradigmas de Programacion", nota: 8, estado: "Promocionada" },
-                // Ejemplo de materia cursada pero sin final:
-                // { nombre: "Análisis Matemático II", nota: null, estado: "Cursada" },
-            ]
-        };
+    <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
 
-        // --- LÓGICA AUTOMÁTICA (CÁLCULOS Y GRÁFICOS) ---
-        function cargarEstadisticas() {
-            const materias = datosAcademicos.materias;
-            
-            // 1. Filtrar y Calcular Conteos
-            const promocionadas = materias.filter(m => m.estado === 'Promocionada').length;
-            const finales = materias.filter(m => m.estado === 'Final').length;
-            const cursadas = materias.filter(m => m.estado === 'Cursada').length;
-            const aprobadasTotal = promocionadas + finales; // Solo las que tienen nota final
-            const pendientes = datosAcademicos.totalMateriasPlan - (aprobadasTotal + cursadas);
-
-            // 2. Calcular Promedio (Solo de materias aprobadas con nota)
-            const materiasConNota = materias.filter(m => m.nota !== null && m.nota > 0);
-            const sumaNotas = materiasConNota.reduce((sum, m) => sum + m.nota, 0);
-            const promedio = materiasConNota.length > 0 ? (sumaNotas / materiasConNota.length).toFixed(2) : 0;
-            
-            // 3. Calcular Porcentaje de Carrera
-            const porcentaje = Math.min(100, (aprobadasTotal / datosAcademicos.totalMateriasPlan) * 100).toFixed(1);
-
-            // 4. Actualizar HTML (Tarjetas)
-            document.getElementById('promedio-val').innerText = promedio;
-            document.getElementById('materias-val').innerText = `${aprobadasTotal} / ${datosAcademicos.totalMateriasPlan}`;
-            document.getElementById('progreso-val').innerText = `${porcentaje}%`;
-            
-            // 5. Animación de barra
-            setTimeout(() => {
-                document.getElementById('progress-fill').style.width = `${porcentaje}%`;
-            }, 500);
-
-            // 6. Generar Gráfico (Chart.js)
-            const ctx = document.getElementById('miCarreraChart').getContext('2d');
-            new Chart(ctx, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Promocionadas', 'Final Aprobado', 'Debo Final', 'Pendientes'],
-                    datasets: [{
-                        data: [promocionadas, finales, cursadas, pendientes],
-                        backgroundColor: ['#00d2d3', '#2e86de', '#feca57', '#576574'],
-                        borderWidth: 0
-                    }]
-                },
-                options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
-            });
-
-            // 7. Generar lista visual
-            const listaContainer = document.getElementById('subjects-list');
-            listaContainer.innerHTML = ''; 
-
-            materias.forEach(m => {
-                // Solo mostramos en la lista las que tienen nota (opcional)
-                if(!m.nota) return; 
-
-                const div = document.createElement('div');
-                div.className = 'subject-item';
-                const esNotaAlta = m.nota >= 9;
-                div.innerHTML = `<span class="subject-name">${m.nombre}</span><span class="subject-grade ${esNotaAlta ? 'high' : ''}">${m.nota}</span>`;
-                listaContainer.appendChild(div);
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', cargarEstadisticas);
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
