@@ -71,6 +71,20 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => revealObserver.observe(el));
 
+// ===== Email: copiar al portapapeles como respaldo de mailto =====
+const emailLink = document.getElementById('email-link');
+const copyToast = document.getElementById('copy-toast');
+
+emailLink.addEventListener('click', () => {
+    const email = emailLink.getAttribute('data-email');
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(email).then(() => {
+            copyToast.classList.add('visible');
+            setTimeout(() => copyToast.classList.remove('visible'), 2000);
+        }).catch(() => {});
+    }
+});
+
 // ===== Botón volver arriba =====
 const backToTop = document.getElementById('back-to-top');
 window.addEventListener('scroll', () => {

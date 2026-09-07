@@ -708,6 +708,32 @@ footer {
 .social-links a svg { width: 20px; height: 20px; }
 .social-links a:hover { color: var(--accent); }
 
+.social-links a { position: relative; }
+
+.copy-toast {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background: var(--bg-card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-family: var(--font-mono);
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    box-shadow: var(--shadow-card);
+}
+
+.copy-toast.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
 .copyright { color: var(--text-dim); font-size: 0.85rem; }
 
 /* BACK TO TOP */
